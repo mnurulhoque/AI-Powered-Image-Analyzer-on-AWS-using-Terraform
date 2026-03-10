@@ -1,6 +1,5 @@
 
-# 🤖 AI-Powered Image Analyzer on AWS  
-### Serverless Application using Terraform, Rekognition & Amazon Bedrock
+# 🤖 AI-Powered Image Analyzer on AWS using Terraform, Rekognition & Amazon Bedrock
 
 ## 🧠 Project Overview 
 
