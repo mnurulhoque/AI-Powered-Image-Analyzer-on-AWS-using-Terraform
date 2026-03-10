@@ -1,7 +1,7 @@
 
 # 📺 AI-Powered Image Analyzer on AWS-Serverless AI Application with Terraform, AWS Bedrock & Rekognition
 
-## 🧠 Overview  
+## 🧠 Project Overview  
 This project demonstrates how to design and deploy a **serverless AI-powered image analysis application** using modern **cloud-native architecture and Infrastructure as Code (IaC)**. The system allows users to upload an image through a web interface, automatically detects objects using **AWS Rekognition**, and generates a natural-language description using **Amazon Bedrock (Mistral LLM)**. The entire infrastructure is provisioned using **Terraform** and automatically deployed using **GitHub Actions CI/CD**. This project reflects practical experience in building **end-to-end AI-powered cloud applications**, integrating AI services, serverless compute, and automated infrastructure deployment.
 
 ---
@@ -61,29 +61,29 @@ Below is the system architecture illustrating how the application processes imag
 
 1. **User Uploads Image**
    
-The user uploads an image through the web application hosted on **Amazon S3**.
+  The user uploads an image through the web application hosted on **Amazon S3**.
 
 3. **CloudFront Delivers Frontend**  
 
-CloudFront provides:
+  CloudFront provides:
  
-  -global CDN delivery
+    -global CDN delivery
 
-   -HTTPS support
+     -HTTPS support
 
-   -improved frontend performance
+     -improved frontend performance
 
 4. **API Gateway Receives Request**
 
-The frontend sends the image as a base64 payload to **POST /analyze**. 
+  The frontend sends the image as a base64 payload to **POST /analyze**. 
 
 5. **Lambda Processes Image**
 
-Lambda performs:
+  Lambda performs:
 
-  -Base64 decoding
+      -Base64 decoding
 
-   -Image processing
+     -Image processing
 
    -Rekognition API calls
 
@@ -159,25 +159,8 @@ This ensures:
 The project includes a GitHub Actions workflow that automatically deploys infrastructure.
 
 Pipeline workflow:
-          Developer Push              
-                │
-                ▼
-          GitHub Actions Trigger
-                │
-                ▼
-          Terraform Init
-                │
-                ▼
-          Terraform Validate
-                │
-                ▼
-          Terraform Plan
-                │
-                ▼
-          Terraform Apply
-                │
-                ▼
-          AWS Infrastructure Updated
+          
+![Pipeline](images/CI-CD pipeline.png)
 
 Benefits:
   
