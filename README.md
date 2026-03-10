@@ -138,19 +138,19 @@ All infrastructure resources are created using Terraform.
 
 Terraform provisions:
 
-  -IAM roles & policies
+    -IAM roles & policies
   
-  -Lambda function deployment
+    -Lambda function deployment
   
-  -API Gateway REST API
+    -API Gateway REST API
   
-  -Lambda permissions
+    -Lambda permissions
   
-  -S3 static website hosting
+    -S3 static website hosting
   
-  -CloudFront CDN
+    -CloudFront CDN
   
-  -Terraform outputs for endpoints
+    -Terraform outputs for endpoints
 
 Example IaC flow:
 
@@ -158,11 +158,11 @@ Example IaC flow:
 
 This ensures:
 
-  -reproducible infrastructure
+    -reproducible infrastructure
   
-  -automated deployments
+    -automated deployments
   
-  -version-controlled cloud resources
+    -version-controlled cloud resources
 
 ## 🔄 CI/CD Pipeline (GitHub Actions)
 
@@ -174,12 +174,12 @@ Pipeline workflow:
 
 Benefits:
   
-  -automated infrastructure deployment
+    -automated infrastructure deployment
   
-  -reproducible environments
+    -reproducible environments
   
-  -DevOps best practices
+    -DevOps best practices
   
-  -secure secret management
+    -secure secret management
 
-⭐ If you find this project interesting, feel free to star the repository or connect with me to discuss cloud, AI, and data engineering solutions.
+**⭐ If you find this project interesting, feel free to star the repository or connect with me to discuss cloud, AI, and data engineering solutions.**
